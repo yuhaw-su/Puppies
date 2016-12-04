@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     var previousPuppyIndex:Int = -1
     var player: AVAudioPlayer?
     let barkSound = Bundle.main.url(forResource: "puppyBark", withExtension: "wav")!
+    let meowSound = Bundle.main.url(forResource: "kittyMeow", withExtension: "wav")!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +55,11 @@ class ViewController: UIViewController {
     
     func bark() {
         do {
-            player = try AVAudioPlayer(contentsOf: barkSound)
+            if previousPuppyIndex == puppyURLs.count - 1 {
+                player = try AVAudioPlayer(contentsOf: meowSound)
+            } else {
+                player = try AVAudioPlayer(contentsOf: barkSound)
+            }
             guard let player = player else { return }
             
             player.prepareToPlay()

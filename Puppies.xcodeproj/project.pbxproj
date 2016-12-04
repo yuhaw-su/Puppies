@@ -16,6 +16,7 @@
 		78EDFAD31DF35C1200733860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78EDFAD11DF35C1200733860 /* LaunchScreen.storyboard */; };
 		78EDFADE1DF35C1200733860 /* PuppiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EDFADD1DF35C1200733860 /* PuppiesTests.swift */; };
 		78EDFAE91DF35C1200733860 /* PuppiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EDFAE81DF35C1200733860 /* PuppiesUITests.swift */; };
+		78F6B9CD1DF3BECE00A15FA2 /* kittyMeow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 78F6B9CC1DF3BECE00A15FA2 /* kittyMeow.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 /* Begin PBXFileReference section */
 		78E83CA51DF36EC900CC6097 /* puppyURLs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = puppyURLs.txt; sourceTree = "<group>"; };
 		78E83CA71DF37C0500CC6097 /* puppyBark.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = puppyBark.wav; sourceTree = "<group>"; };
-		78EDFAC51DF35C1200733860 /* Puppies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puppies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78EDFAC51DF35C1200733860 /* Puppy Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Puppy Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78EDFAC81DF35C1200733860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78EDFACA1DF35C1200733860 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		78EDFACD1DF35C1200733860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		78EDFAE41DF35C1200733860 /* PuppiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuppiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78EDFAE81DF35C1200733860 /* PuppiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppiesUITests.swift; sourceTree = "<group>"; };
 		78EDFAEA1DF35C1200733860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78F6B9CC1DF3BECE00A15FA2 /* kittyMeow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kittyMeow.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +93,7 @@
 		78EDFAC61DF35C1200733860 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				78EDFAC51DF35C1200733860 /* Puppies.app */,
+				78EDFAC51DF35C1200733860 /* Puppy Time.app */,
 				78EDFAD91DF35C1200733860 /* PuppiesTests.xctest */,
 				78EDFAE41DF35C1200733860 /* PuppiesUITests.xctest */,
 			);
@@ -106,6 +108,7 @@
 				78EDFACC1DF35C1200733860 /* Main.storyboard */,
 				78E83CA51DF36EC900CC6097 /* puppyURLs.txt */,
 				78E83CA71DF37C0500CC6097 /* puppyBark.wav */,
+				78F6B9CC1DF3BECE00A15FA2 /* kittyMeow.wav */,
 				78EDFACF1DF35C1200733860 /* Assets.xcassets */,
 				78EDFAD11DF35C1200733860 /* LaunchScreen.storyboard */,
 				78EDFAD41DF35C1200733860 /* Info.plist */,
@@ -148,7 +151,7 @@
 			);
 			name = Puppies;
 			productName = Puppies;
-			productReference = 78EDFAC51DF35C1200733860 /* Puppies.app */;
+			productReference = 78EDFAC51DF35C1200733860 /* Puppy Time.app */;
 			productType = "com.apple.product-type.application";
 		};
 		78EDFAD81DF35C1200733860 /* PuppiesTests */ = {
@@ -243,6 +246,7 @@
 				78EDFAD01DF35C1200733860 /* Assets.xcassets in Resources */,
 				78EDFACE1DF35C1200733860 /* Main.storyboard in Resources */,
 				78E83CA81DF37C0500CC6097 /* puppyBark.wav in Resources */,
+				78F6B9CD1DF3BECE00A15FA2 /* kittyMeow.wav in Resources */,
 				78E83CA61DF36EC900CC6097 /* puppyURLs.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,7 +429,7 @@
 				INFOPLIST_FILE = Puppies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Puppies.Puppies;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Puppy Time";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -438,7 +442,7 @@
 				INFOPLIST_FILE = Puppies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Puppies.Puppies;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Puppy Time";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
